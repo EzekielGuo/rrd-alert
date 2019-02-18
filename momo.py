@@ -253,6 +253,4 @@ for rrd in rrds_agg_info:
 
 
 
-print('-------------------------script complete-------------------------')
-
 
