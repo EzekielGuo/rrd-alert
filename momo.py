@@ -55,12 +55,12 @@ rrds_agg_info = [
 ]
 
 
-my_sender = 'momo-alert@21nmc.com'  # 发件人邮箱账号
-my_pass = 'momo_21vianet.com'  # 发件人邮箱密码
-my_user1 = 'guo.zhijie@21vianet.com'  # 收件人邮箱账号，我这边发送给自己
-my_user2 = 'dong.ze@21vianet.com'  # 收件人邮箱账号，我这边发送给自己
-#my_user3 = 'qiao.jianguo@21vianet.com'  # 收件人邮箱账号，我这边发送给自己
-#my_user4 = 'idcyw@21vianet.com'  # 收件人邮箱账号，我这边发送给自己
+my_sender = ''  # 发件人邮箱账号
+my_pass = ''  # 发件人邮箱密码
+my_user1 = 'xx@21vianet.com'  # 收件人邮箱账号，我这边发送给自己
+my_user2 = 'xx@21vianet.com'  # 收件人邮箱账号，我这边发送给自己
+#my_user3 = 'xx@21vianet.com'  # 收件人邮箱账号，我这边发送给自己
+#my_user4 = 'xx@21vianet.com'  # 收件人邮箱账号，我这边发送给自己
 
 cmd_p1 = 'scp -l 30000 /database-a/rra/'
 # cmd_p1 = 'scp /var/www/html/rra/'
@@ -92,7 +92,7 @@ def mail(content_info,titles):
 ssh = paramiko.SSHClient()
 #把要连接的机器添加到known_hosts文件中
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect(hostname='211.151.5.13', port=22304, username='zzadmin', password='nmc@21vianet.com')
+ssh.connect(hostname='xx.xx.xx.13', port=, username='xx', password='xx')
 
 cmd = '{}{}{}\n' \
       '{}{}{}\n' \
