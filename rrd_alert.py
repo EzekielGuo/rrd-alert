@@ -27,24 +27,24 @@ print('当前时间: {}'.format(time1_beijing))
 
 # rrds_info格式： ①rrd文件名,②设备名及端口,③备注信息,④in方向阈值(单位：M),⑤out方向阈值(单位：M)
 rrds_info = [
-    # ('x-dx8f-5800-cnc-b009-c_traffic_in_33228.rrd','<X-DX8F-5800-CNC-B009-C-VRF>T1/1/4','陌陌大兴-单联通','500','300'),
-    # ('x-dx8f-5800-ct-c_traffic_in_23861.rrd','<X-DX8F-5800-CT-B010-C-VRF>T1/1/4','陌陌大兴-单联通','500','300'),
-    # ('x-dx8f-5820-cnc-b009-vrf_traffic_in_34137.rrd','<X-DX8F-5820-CNC-B009-VRF>T1/0/1','陌陌大兴-单电信','500','150'),
-    # ('x-dx8f-5820-ct-b010-vrf_traffic_in_34107.rrd','<X-DX8F-5820-CT-B010-VRF>T1/0/1','陌陌大兴-单电信','500','150'),
-    # ('xb-dx-6f-5820-88-a-vrf_traffic_in_41348.rrd','<XB-DX-6F-5820-88-A-VRF>RAGG10','陌陌大兴-3B','400','100'),
-    # ('xb-dx-6f-5820-88-b-vrf_traffic_in_41349.rrd','<XB-DX-6F-5820-88-B-VRF>RAGG10','陌陌大兴-3B','400','100'),
-    # ('xb-m6-f4-5820-a-177-vrf_traffic_in_35417.rrd','<XB-M6-F4-5820-A-177-VRF>T1/0/1','陌陌M6-3B','300','100'),
-    # ('xb-m6-f4-5820-b-178-vrf_traffic_in_35459.rrd','<XB-M6-F4-5820-B-178-VRF>T1/0/1','陌陌M6-3B','300','100'),
-    # ('xb-m6-f4-5820-a-177-vrf_traffic_in_35418.rrd','<XB-M6-F4-5820-A-177-VRF>T1/0/2','陌陌M6-3B','200','100'),
-    # ('xb-m6-f4-5820-b-178-vrf_traffic_in_35460.rrd','<XB-M6-F4-5820-B-178-VRF>T1/0/2','陌陌M6-3B','200','100'),
-    ('x-dx8f-5800-cnc-b009-c_traffic_in_3012.rrd','<X-DX8F-5800-CNC-B009-C-VRF>T1/1/4','陌陌大兴-单联通','500','300'),
-    ('x-dx8f-5800-ct-b010-c-vrf_traffic_in_13584.rrd','<X-DX8F-5800-CT-B010-C-VRF>T1/1/4','陌陌大兴-单联通','500','300'),
-    ('x-dx8f-5820-cnc-b009-vrf_traffic_in_8846.rrd','<X-DX8F-5820-CNC-B009-VRF>T1/0/1','陌陌大兴-单电信','500','150'),
-    ('x-dx8f-5820-ct-b010-vrf_traffic_in_8816.rrd','<X-DX8F-5820-CT-B010-VRF>T1/0/1','陌陌大兴-单电信','500','150'),
-    ('xb-m6-f4-5820-a-177-vrf_traffic_in_9891.rrd','<XB-M6-F4-5820-A-177-VRF>T1/0/1','陌陌M6-3B','300','100'),
-    ('xb-m6-f4-5820-b-178-vrf_traffic_in_9933.rrd','<XB-M6-F4-5820-B-178-VRF>T1/0/1','陌陌M6-3B','300','100'),
-    ('xb-m6-f4-5820-a-177-vrf_traffic_in_9892.rrd','<XB-M6-F4-5820-A-177-VRF>T1/0/2','陌陌M6-3B','200','100'),
-    ('xb-m6-f4-5820-b-178-vrf_traffic_in_9934.rrd','<XB-M6-F4-5820-B-178-VRF>T1/0/2','陌陌M6-3B','200','100'),
+    # ('x-dx8f-5800-cnc-b009-c_traffic_in_33228.rrd','<X-DX8F-5800-CNC-B009-C-VRF>T1/1/4','xx大兴-单联通','500','300'),
+    # ('x-dx8f-5800-ct-c_traffic_in_23861.rrd','<X-DX8F-5800-CT-B010-C-VRF>T1/1/4','xx大兴-单联通','500','300'),
+    # ('x-dx8f-5820-cnc-b009-vrf_traffic_in_34137.rrd','<X-DX8F-5820-CNC-B009-VRF>T1/0/1','xx大兴-单电信','500','150'),
+    # ('x-dx8f-5820-ct-b010-vrf_traffic_in_34107.rrd','<X-DX8F-5820-CT-B010-VRF>T1/0/1','xx大兴-单电信','500','150'),
+    # ('xb-dx-6f-5820-88-a-vrf_traffic_in_41348.rrd','<XB-DX-6F-5820-88-A-VRF>RAGG10','xx大兴-3B','400','100'),
+    # ('xb-dx-6f-5820-88-b-vrf_traffic_in_41349.rrd','<XB-DX-6F-5820-88-B-VRF>RAGG10','xx大兴-3B','400','100'),
+    # ('xb-m6-f4-5820-a-177-vrf_traffic_in_35417.rrd','<XB-M6-F4-5820-A-177-VRF>T1/0/1','xxM6-3B','300','100'),
+    # ('xb-m6-f4-5820-b-178-vrf_traffic_in_35459.rrd','<XB-M6-F4-5820-B-178-VRF>T1/0/1','xxM6-3B','300','100'),
+    # ('xb-m6-f4-5820-a-177-vrf_traffic_in_35418.rrd','<XB-M6-F4-5820-A-177-VRF>T1/0/2','xxM6-3B','200','100'),
+    # ('xb-m6-f4-5820-b-178-vrf_traffic_in_35460.rrd','<XB-M6-F4-5820-B-178-VRF>T1/0/2','xxM6-3B','200','100'),
+    ('x-dx8f-5800-cnc-b009-c_traffic_in_3012.rrd','<X-DX8F-5800-CNC-B009-C-VRF>T1/1/4','xx大兴-单联通','500','300'),
+    ('x-dx8f-5800-ct-b010-c-vrf_traffic_in_13584.rrd','<X-DX8F-5800-CT-B010-C-VRF>T1/1/4','xx大兴-单联通','500','300'),
+    ('x-dx8f-5820-cnc-b009-vrf_traffic_in_8846.rrd','<X-DX8F-5820-CNC-B009-VRF>T1/0/1','xx大兴-单电信','500','150'),
+    ('x-dx8f-5820-ct-b010-vrf_traffic_in_8816.rrd','<X-DX8F-5820-CT-B010-VRF>T1/0/1','xx大兴-单电信','500','150'),
+    ('xb-m6-f4-5820-a-177-vrf_traffic_in_9891.rrd','<XB-M6-F4-5820-A-177-VRF>T1/0/1','xxM6-3B','300','100'),
+    ('xb-m6-f4-5820-b-178-vrf_traffic_in_9933.rrd','<XB-M6-F4-5820-B-178-VRF>T1/0/1','xxM6-3B','300','100'),
+    ('xb-m6-f4-5820-a-177-vrf_traffic_in_9892.rrd','<XB-M6-F4-5820-A-177-VRF>T1/0/2','xxM6-3B','200','100'),
+    ('xb-m6-f4-5820-b-178-vrf_traffic_in_9934.rrd','<XB-M6-F4-5820-B-178-VRF>T1/0/2','xxM6-3B','200','100'),
 ]
 
 # rrds_agg_info格式： ①rrd-1文件名,②rrd-2文件名,③设备名及端口,④备注信息,⑤in方向阈值(单位：M),⑥out方向阈值(单位：M)
@@ -64,7 +64,7 @@ my_user2 = 'xx@21vianet.com'  # 收件人邮箱账号，我这边发送给自己
 
 cmd_p1 = 'scp -l 30000 /database-a/rra/'
 # cmd_p1 = 'scp /var/www/html/rra/'
-cmd_p2 = ' root@124.250.245.245:/root'
+cmd_p2 = ' root@xx.xx.xx.xx:/root'
 
 def mail(content_info,titles):
     ret = True
@@ -77,7 +77,7 @@ def mail(content_info,titles):
         # msg['To'] = formataddr([" ", my_user4])  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
         msg['Subject'] = titles  # 邮件的主题，也可以说是标题
         server = smtplib.SMTP()
-        server.connect("mail.21nmc.com", 25)
+        server.connect("mail.xxx.com", 25)
         # smtp.set_debuglevel(1)
         server.login(my_sender, my_pass)  # 括号中对应的是发件人邮箱账号、邮箱密码
         server.sendmail(my_sender, [my_user1,my_user2,], msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
@@ -174,7 +174,7 @@ for rrd in rrds_info:
                  '    设备端口：{}'.format(rrd[2],
                                       print_in,print_out,
                                       rrd[3],rrd[4],
-                                      rrd[1]), '陌陌-流量监控-报警（{}）'.format(rrd[2]))
+                                      rrd[1]), 'xx-流量监控-报警（{}）'.format(rrd[2]))
             print('发送邮件告警')
         elif rows[7][0] == 0 or rows[7][1] == 0 or rows[6][0] == 0 or rows[6][1] == 0 or rows[5][0] == 0 or rows[5][1] == 0:
             mail('    描述信息：{}\n'
@@ -182,7 +182,7 @@ for rrd in rrds_info:
                  '    当前阈值：traffic_in:{}M，traffic_out:{}M\n'
                  '    设备端口：{}'.format(rrd[2],
                                       rrd[3],rrd[4],
-                                      rrd[1]), '陌陌-流量监控-报警（{}）'.format(rrd[2]))
+                                      rrd[1]), 'xx-流量监控-报警（{}）'.format(rrd[2]))
             print('发送邮件告警')
         else:
             print('{} ok'.format(rrd[1]))
@@ -236,7 +236,7 @@ for rrd in rrds_agg_info:
                  '    设备端口：{}'.format(rrd[2],
                                       print_in,print_out,
                                       rrd[3],rrd[4],
-                                      rrd[1]), '陌陌-流量监控-报警（{}）'.format(rrd[2]))
+                                      rrd[1]), 'xx-流量监控-报警（{}）'.format(rrd[2]))
             print('发送邮件告警')
         elif rows1[7][0] + rows1[7][1] == 0 or rows2[7][0] + rows2[7][1] == 0 :
             mail('    描述信息：{}\n'
@@ -244,7 +244,7 @@ for rrd in rrds_agg_info:
                  '    当前阈值：traffic_in:{}M，traffic_out:{}M\n'
                  '    设备端口：{}'.format(rrd[2],
                                       rrd[3],rrd[4],
-                                      rrd[1]), '陌陌-流量监控-报警（{}）'.format(rrd[2]))
+                                      rrd[1]), 'xx-流量监控-报警（{}）'.format(rrd[2]))
             print('发送邮件告警')
         else:
             print('{} ok'.format(rrd[2]))
